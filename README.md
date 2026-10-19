@@ -11,6 +11,10 @@ A portfolio demonstration of an enterprise AI agent that combines grounded knowl
 - [View the role access demonstration](https://mattxhl.github.io/enterprise-ai-portfolio/02-role-access-demo.html)
 - [Browse this portfolio repository](https://github.com/mattxhl/enterprise-ai-portfolio)
 
+## Access the live demo
+
+Start with the screenshot walkthroughs; they require no account. To use the live application, request assigned demo credentials from Matthew Xu. The reader account covers policy questions; HR reader permits employee queries; HR writer permits proposals and explicit approval/rejection. Writer self-approval is an intentional demo policy. The demonstrated writer path ends in rejection without a salary change.
+
 ## What the demo demonstrates
 
 The public reader experience shows:
@@ -31,7 +35,7 @@ The [local role demonstration](https://mattxhl.github.io/enterprise-ai-portfolio
 - Upload denials for all three normal accounts.
 - Successful ingestion with a temporary `knowledge_manager` grant, duplicate detection, and cited retrieval. The temporary grant was removed after testing.
 
-These privileged scenarios were captured locally; they are not enabled in the hosted public reader demo.
+These screenshots were captured locally. Hosted sign-in is now enabled for assigned demo accounts; reader access, HR-reader queries, and writer proposal/rejection were also verified in the hosted app. Successful knowledge upload used a temporary local management-role grant.
 
 ## Technical highlights
 
@@ -53,7 +57,7 @@ The release pipeline:
 3. Deploys both Cloud Run services.
 4. Verifies that the new revisions are Ready with 100% traffic.
 
-Public demo login remains disabled. The private development repository contains the full implementation, tests, and deployment configuration.
+Hosted demo login is enabled. Request demo credentials from Matthew Xu; passwords are not published in this repository. The private development repository contains the implementation, tests, and deployment configuration.
 
 ## Screenshot
 
