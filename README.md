@@ -4,8 +4,8 @@ A portfolio demonstration of an enterprise AI agent that combines grounded knowl
 
 ## Live links
 
+- [Start here: portfolio home](https://mattxhl.github.io/enterprise-ai-portfolio/)
 - [Architecture & engineering decisions](https://mattxhl.github.io/enterprise-ai-portfolio/03-architecture.html)
-
 - [Open the live Cloud Run demo](https://enterprise-ai-frontend-655698171583.us-west1.run.app)
 - [View the public reader demonstration](https://mattxhl.github.io/enterprise-ai-portfolio/01-public-reader-demo.html)
 - [View the role access demonstration](https://mattxhl.github.io/enterprise-ai-portfolio/02-role-access-demo.html)
