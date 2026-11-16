@@ -50,14 +50,21 @@ These screenshots were captured locally. Hosted sign-in is now enabled for assig
 
 ## Deployment evidence
 
-The release pipeline:
+Reviewed merges to main automatically start the Cloud Build release pipeline:
 
 1. Builds and tests the backend and frontend images.
-2. Runs database migrations.
-3. Deploys both Cloud Run services.
-4. Verifies that the new revisions are Ready with 100% traffic.
+2. Publishes the tested images and acquires the shared release lock.
+3. Runs migrations against the existing Neon database; no production database image is built.
+4. Deploys both Cloud Run services and verifies readiness and 100% latest-revision traffic.
+5. Removes its owned lock; browser checks remain separate.
 
 Hosted demo login is enabled. Request demo credentials from Matthew Xu; passwords are not published in this repository. The private development repository contains the implementation, tests, and deployment configuration.
+
+Automatic deployment was verified on November 15, 2026: PR 70 merged as `e21f822` and automatically started successful build `6e9c193d`. Final hosted login, policy-answer, inspector measurements and timeline checks passed. No local deployment command is required for future main merges.
+
+## V1 scope
+
+V1 feature scope is complete and frozen. Maintenance and documentation corrections may continue through reviewed PRs. Automated browser checks, automatic rollback, separate approver duties and narrower build permissions are deferred improvements. This is a portfolio demonstration, not a claim of enterprise production qualification.
 
 ## Screenshot
 
